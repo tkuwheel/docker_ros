@@ -5,10 +5,13 @@
 
 # Write ROS config to bashrc
 cat << 'EOF' >> /home/"${1}"/.bashrc
-export ROS_HOSTNAME=http://127.0.0.1:11311
+
+source /opt/ros/noetic/setup.bash
+
+export ROS_MASTER_URI=http://127.0.0.1:11311
 export ROS_IP=127.0.0.1
 
-echo "ROS_HOSTNAME=${ROS_HOSTNAME}"
+echo "ROS_MASTER_URI=${ROS_MASTER_URI}"
 echo "ROS_IP=${ROS_IP}"
 
 EOF
