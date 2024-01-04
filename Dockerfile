@@ -94,7 +94,7 @@ WORKDIR /home/"${USER}"/work
 # * Make SSH available
 EXPOSE 22
 
-# ENTRYPOINT [ "/entrypoint.sh", "terminator" ]
+ENTRYPOINT [ "/entrypoint.sh", "terminator" ]
 # ENTRYPOINT [ "/entrypoint.sh", "tmux" ]
-ENTRYPOINT [ "/entrypoint.sh", "bash" ]
+# ENTRYPOINT [ "/entrypoint.sh", "bash" ]
 # ENTRYPOINT [ "/entrypoint.sh" ]
