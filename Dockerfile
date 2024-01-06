@@ -75,6 +75,10 @@ RUN apt update \
 # display dep
 # libnss3 libgbm1 libxshmfence1 libdrm2 libx11-xcb1 libxcb-*-dev
 
+# sudo rm -rf /etc/ros/rosdep/sources.list.d/20-default.list
+# sudo rosdep init
+# rosdep update
+
 RUN ./config/pip/pip_setup.sh
 
 ############################## USER CONFIG ####################################
