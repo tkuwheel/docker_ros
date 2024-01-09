@@ -55,6 +55,7 @@ RUN apt update \
         wget \
         curl \
         psmisc \
+        vim \
         # * Shell
         tmux \
         terminator \
